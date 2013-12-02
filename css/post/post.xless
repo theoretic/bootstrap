@@ -1,0 +1,100 @@
+.post{
+	//width:790px;
+	margin:20px 0px 30px 0px;
+	position:relative;
+	.shadow(0,0,5px,rgba(0,0,0,.5));
+	background:url(@{path}/img/backs/paper.jpg) #fff;
+
+	>.padder{
+		padding:20px !important;
+		}
+	h1.pagetitle{
+		//margin-top:-2px;
+		padding: 0 0 15px 0;
+		}
+	.date{
+		position:absolute;
+		right:20px;
+		top:60px;
+		font-size:12px;
+		color:#999;
+		}
+	.back{
+		position:absolute;
+		right:20px;
+		top:20px;
+		a
+			{
+			display:block;
+			padding:5px 5px 5px 15px;
+			height:28px;
+			color:#fff;
+			background:url(@{path}/img/backs/arrow.png) 0px -12px;
+			}
+		}
+
+	.clip{
+		position:absolute;
+		right:120px;
+		top:-20px;
+		z-index:100;
+		width:35px;
+		height:140px;
+		background:url(@{path}/img/backs/clip.png);
+		}
+	.image{
+		padding-top:0px;
+		img{
+			width:100%;
+			}
+		}
+	.links{
+		padding:15px 0px;
+		a>i{
+			padding:0 5px 0 0;
+			}
+		}
+	.map{
+		}
+	.readfull{
+		float:right;
+		}
+	}
+
+//AT: adaptive
+
+@media (max-width:639px){
+	.post{
+		border:1px solid #ccc !important;
+		.clip{
+			display:none;
+			}
+		}
+	}
+
+@media (min-width:720px){
+	.post{
+		//border:20px solid #ccc !important;
+		.clip{
+			display:block;
+			}
+		}
+	}
+
+@media (min-width:768px){
+	.post{
+		//border:30px solid #ccc !important;
+		.clip{
+			display:none;
+			}
+		}
+	}
+
+@media (min-width:992px){
+	.post{
+		//border:40px solid #ccc !important;
+		.clip{
+			display:block;
+			}
+		}
+	}

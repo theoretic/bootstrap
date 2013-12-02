@@ -1,0 +1,23 @@
+.pagination{
+	position:relative;
+	width:100%;
+	.previous, .next
+		{
+		position:absolute;
+		top:0px;
+		}
+	.previous{
+		
+		}
+	.next{
+		right:0px;
+		}
+	.pages{
+		text-align:center;
+		padding:0 100px;
+		}
+	span,a{
+		font: 20px ank,sans-serif;
+		padding: 5px 10px;
+		}
+	}

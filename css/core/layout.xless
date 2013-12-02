@@ -1,0 +1,43 @@
+body{
+	background:url(@{path}/img/backs/global.jpg) #eae9e2;
+	}
+
+.navbar{
+	height:180px;
+	position:relative;
+	.logo{
+		margin:40px 0 0 0;
+		}
+	.menu{
+		position:absolute;
+		left:280px;
+		top:95px;
+		}
+	}
+
+
+.footer{
+	//border:20px solid #ccc;
+	height:200px;
+	clear:both;
+	}
+
+@media (max-width: 495px) {
+.hidden-xx {
+display: none !important;
+}
+.navbar .menu {
+left: 0px !important;
+top: 160px !important;
+}
+}
+
+@media (min-width: 992px) {
+	.right-top {
+	float: right !important;
+	}
+	.right-bottom {
+	}
+}
+
+

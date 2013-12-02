@@ -1,0 +1,132 @@
+*{
+font:15px OldTyper, tahoma,sans-serif;
+color:#555;
+text-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+
+// links
+
+a{
+color:@red;
+text-decoration:none;
+}
+
+a:visited{
+color:desaturate(@red,30%);
+}
+
+// headers
+
+h1,h2,h3,h4,h5,h6{
+font-family:ank,arial;
+text-transform:uppercase;
+//color:@grey;
+}
+
+
+h1,h2,h3{
+letter-spacing:-1px;
+}
+
+h4,h5{
+letter-spacing:0px;
+}
+
+h1,h2,h3,h4{
+padding:10px 0;
+}
+
+h5,h6{
+padding:5px 0;
+}
+
+
+h1{
+font-size:44px;
+}
+
+h2{
+font-size:34px;
+}
+
+h3{
+font-size:30px;
+}
+
+h4{
+font-size:26px;
+}
+
+h5{
+font-size:20px;
+}
+
+h6{
+font-size:16px;
+}
+
+// paragraphs and lists
+
+.content p, .content li{
+}
+
+.content p{
+padding-bottom:15px;
+}
+
+.content ul, .content ol{
+	padding:0 0 20px 25px;
+	li{
+		font-size:13px;
+		}
+	}
+
+.comment, .comment p{
+font-size:11px !important;
+color:#999;
+}
+
+.copyright, .copyright p{
+font-size:11px !important;
+color:#999;
+}
+
+// contacts
+
+
+/* bottom */
+
+.bottom{
+font-size:11px;
+}
+
+/* misc */
+
+.title{
+letter-spacing:-1px;
+}
+
+h1.pagetitle{
+padding: 0 0 25px 0;
+}
+
+.inset-left{
+float:left;
+margin: 0 10px 10px 0;
+}
+
+.inset-right{
+float:right;
+margin: 0 0 10px 10px;
+}
+
+// hidden-visible
+
+.hidden{
+display:none;
+}
+
+.visible{
+display:block;
+}
+

@@ -1,0 +1,85 @@
+/* colors */
+
+@red: #970000;
+
+@grey: #999;
+@grey-light: #f7f7f7;
+@grey-dark: #323232;
+
+/* paths */
+
+@path: "/assets/templates/bootstrap";
+
+/* mixins */
+
+.opacity(@opacity: .5){
+-!ie- opacity: @opacity;
+ -moz-opacity: @opacity;
+-ie- filter: alpha(opacity=@opacity*100);
+}
+
+.rounded (@radius:10px){
+border-radius: @radius;
+ -webkit-border-radius: @radius;
+ -moz-border-radius: @radius;
+}
+
+.shadow(@x:1px,@y:1px,@blur:1px,@color){
+box-shadow: @x @y @blur @color;
+ -webkit-box-shadow: @x @y @blur @color;
+ -moz-box-shadow: @x @y @blur @color;
+}
+
+.noshadow(){
+box-shadow: none;
+ -webkit-box-shadow: none;
+ -moz-box-shadow:none;
+}
+
+.grad(@top,@bottom){
+ background: -webkit-linear-gradient(top,@top,@bottom);
+ background: -moz-linear-gradient(top,@top,@bottom);
+ background: -o-linear-gradient(top,@top,@bottom);
+-ie- -pie-background: linear-gradient(top,@top,@bottom);
+}
+
+.grad-angle(@color-start,@color-end,@angle){
+ background: -webkit-linear-gradient(@angle,@color-start,@color-end);
+ background: -moz-linear-gradient(left top @angle,@color-start,@color-end);
+ background: -o-linear-gradient(@angle,@color-start,@color-end);
+-ie- -pie-background: linear-gradient(@angle,@color-start,@color-end);
+}
+
+.transition(@property:all,@duration:1s,@method:ease-out){
+transition: @property @duration @method;
+-webkit-transition: @property @duration @method;
+-moz-transition: @property @duration @method;
+-o-transition: @property @duration @method;
+-ie- -ms-transition: @property @duration @method;
+}
+
+//fonts
+
+.font-face(@font){
+	@font-face{
+		font-family: '@font';
+		src: url('@{path}/fonts/@font/@font.eot');
+		src: url('@{path}/fonts/@font/@font.eot?iefix') format('eot'),
+			 url('@{path}/fonts/@font/@font.woff') format('woff'),
+			 url('@{path}/fonts/@font/@font.ttf') format('truetype'),
+			 url('@{path}/fonts/@font/@font.svg#webfont') format('svg');
+		}
+	}
+
+//misc
+
+.debug(@outline:1px,@color:#000){
+outline:@outline solid @color
+}
+
+.clearblock{
+width:100%;
+content:" ";
+height:1px;
+clear:both;
+}

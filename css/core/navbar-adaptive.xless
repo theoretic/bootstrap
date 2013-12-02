@@ -1,0 +1,36 @@
+//AT
+
+@media (max-width:719px){
+	.navbar{
+		background:url(@{path}/img/backs/head720.png) 0 0 no-repeat !important;
+		//border:20px solid #ccc !important;
+		}
+	}
+
+@media (min-width:720px){
+	.navbar{
+		background:url(@{path}/img/backs/head768.png) 0 0 no-repeat !important;
+		//border:10px solid #ccc !important;
+		}
+	}
+
+@media (min-width:768px){
+	.navbar{
+		background:url(@{path}/img/backs/head768.png) 0 0 no-repeat !important;
+		//border:5px solid #ccc !important;
+		}
+	}
+
+@media (min-width:992px){
+	.navbar{
+		background:url(@{path}/img/backs/head992.png) 0 0 no-repeat !important;
+		//border:1px solid #ccc !important;
+		}
+	}
+
+@media (min-width:1200px){
+	.navbar{
+		background:url(@{path}/img/backs/head1200.png) 0 0 no-repeat !important;
+		//border:1px solid #ccc !important;
+		}
+	}

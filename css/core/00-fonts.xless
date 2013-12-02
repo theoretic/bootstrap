@@ -1,0 +1,22 @@
+@font-face {
+font-family: 'ank';
+src: url('@{path}/fonts/ank/ank-webfont.eot');
+src: url('@{path}/fonts/ank/ank-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('@{path}/fonts/ank/ank-webfont.woff') format('woff'),
+	 url('@{path}/fonts/ank/ank-webfont.ttf') format('truetype'),
+	 url('@{path}/fonts/ank/ank-webfont.svg') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'OldTyper';
+src: url('@{path}/fonts/oldtyper/oldtyper-webfont.eot');
+src: url('@{path}/fonts/oldtyper/oldtyper-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('@{path}/fonts/oldtyper/oldtyper-webfont.woff') format('woff'),
+	 url('@{path}/fonts/oldtyper/oldtyper-webfont.ttf') format('truetype'),
+	 url('@{path}/fonts/oldtyper/oldtyper-webfont.svg') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
