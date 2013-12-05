@@ -20,6 +20,7 @@ body{
 	//border:20px solid #ccc;
 	height:200px;
 	clear:both;
+	background:url(@{path}/img/backs/tyre-trace.png) 0 100% no-repeat;
 	}
 
 @media (max-width: 495px) {
