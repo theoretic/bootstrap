@@ -18,9 +18,12 @@ body{
 
 .footer{
 	//border:20px solid #ccc;
-	height:200px;
+	margin:50px 0 0 0;
+	min-height:200px;
 	clear:both;
-	background:url(@{path}/img/backs/tyre-trace.png) 0 100% no-repeat;
+	background:
+		rgba(0,0,0,.2) 
+		//url(@{path}/img/backs/tyre-trace.png) 0 100% no-repeat;
 	}
 
 @media (max-width: 495px) {

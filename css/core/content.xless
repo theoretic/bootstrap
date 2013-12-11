@@ -94,13 +94,13 @@ color:#999;
 // contacts
 
 
-/* bottom */
+// bottom 
 
 .bottom{
 font-size:11px;
 }
 
-/* misc */
+// misc 
 
 .title{
 letter-spacing:-1px;
@@ -130,3 +130,17 @@ display:none;
 display:block;
 }
 
+//footer
+
+.footer{
+	div, a, p, li{
+		font-size:13px;
+		}
+	h1,h2,h3,h4,h5{
+		padding-top:10px;
+		}
+	ul,li{
+		margin-left:-20px;
+		padding-left:-20px;
+		}
+	}
