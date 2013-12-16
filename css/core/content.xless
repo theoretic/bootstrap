@@ -106,9 +106,6 @@ font-size:11px;
 letter-spacing:-1px;
 }
 
-h1.pagetitle{
-padding: 0 0 25px 0;
-}
 
 .inset-left{
 float:left;
@@ -129,6 +126,23 @@ display:none;
 .visible{
 display:block;
 }
+
+
+//sidebar
+
+.sidebar{
+	div, a, p, li{
+		font-size:13px;
+		}
+	h1,h2,h3,h4,h5{
+		padding-top:10px;
+		}
+	ul,li{
+		margin-left:-20px;
+		padding-left:-20px;
+		}
+	}
+
 
 //footer
 
