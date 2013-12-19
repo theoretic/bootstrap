@@ -30,22 +30,3 @@ body{
 		//url(@{path}/img/backs/tyre-trace.png) 0 100% no-repeat;
 	}
 
-@media (max-width: 495px) {
-.hidden-xx {
-display: none !important;
-}
-.navbar .menu {
-left: 0px !important;
-top: 160px !important;
-}
-}
-
-@media (min-width: 992px) {
-	.right-top {
-	float: right !important;
-	}
-	.right-bottom {
-	}
-}
-
-
