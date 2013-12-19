@@ -1,6 +1,14 @@
 .sidebar{
 	.col{
 		padding:0px;
+		-webkit-filter: grayscale(1); 
+		.opacity(.5);
+		.transition();
+		:hover{
+			.opacity(1);
+			-webkit-filter: grayscale(0); 
+			}
+		
 		h3{
 			padding:8px 0;
 			}
