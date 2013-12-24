@@ -1,0 +1,46 @@
+.socials{
+
+	position:fixed;
+	z-index:1000;
+	right:3px;
+	top:200px;
+	width:30px;
+
+	text-align:center;
+	}
+
+
+@media (max-width:719px){
+	.socials{
+		width:25px;
+		//outline:1px solid #ccc;
+		}
+	}
+
+@media (min-width:720px){
+	.socials{
+		width:25px;
+		//outline:1px solid #5555ff;
+		}
+	}
+
+@media (min-width:768px){
+	.socials{
+		width:30px;
+		//outline:1px solid #55ff55;
+		}
+	}
+
+@media (min-width:1200px){
+	.socials{
+		width:30px;
+		//outline:1px solid #ff5555;
+		}
+	}
+
+@media (min-width:1300px){
+	.socials{
+		width:40px;
+		}
+	}
+

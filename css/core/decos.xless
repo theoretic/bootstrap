@@ -1,0 +1,13 @@
+.deco{
+	position:fixed;
+	z-index:10;
+	}
+
+.deco.tyre{
+	left:0px;
+	bottom:0px;
+	width:120px;
+	height:120px;
+	.opacity(.3);
+	background:url(@{path}/img/backs/tyre-trace.png);
+	}

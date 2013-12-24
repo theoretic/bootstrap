@@ -1,12 +1,15 @@
 .sidebar{
 	.col{
 		padding:0px;
-		-webkit-filter: grayscale(1); 
-		.opacity(.5);
+		//-webkit-filter: grayscale(1); 
+		.grayscale(1);
+		.opacity(.7);
 		.transition();
 		:hover{
 			.opacity(1);
-			-webkit-filter: grayscale(0); 
+			.grayscale(0);
+			//-webkit-filter: grayscale(0); 
+			filter: grayscale(0); 
 			}
 		
 		h3{

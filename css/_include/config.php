@@ -8,7 +8,8 @@ $config=array(
 	'prefixes'=>array(
 		'Chrome'=>array('wk','webkit',),
 		'Firefox'=>array('ff','moz','firefox'),
-		'Internet Explorer'=>array('ms','ie',),
+//		'Internet Explorer'=>array('ms','ie',),
+		'IE'=>array('ms','ie',),
 		'Opera'=>array('o','op','opera'),
 		'Safari'=>array('wk','sf','safari',),
 		),

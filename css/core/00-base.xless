@@ -12,10 +12,12 @@
 
 /* mixins */
 
-.opacity(@opacity: .5){
+.opacity(@opacity:.5){
+@opacityPercents:@opacity*100;
 -!ie- opacity: @opacity;
- -moz-opacity: @opacity;
--ie- filter: alpha(opacity=@opacity*100);
+-ff- -moz-opacity: @opacity;
+//-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=(@{opacityPercents}))";
+-ie- filter: ~"alpha(opacity = @{opacityPercents})";
 }
 
 .rounded (@radius:10px){
@@ -49,6 +51,17 @@ box-shadow: none;
  background: -o-linear-gradient(@angle,@color-start,@color-end);
 -ie- -pie-background: linear-gradient(@angle,@color-start,@color-end);
 }
+
+.iegrayscale(@amount) when(@amount>0) {
+	-ie- filter: gray;
+	}
+
+.grayscale(@amount){
+	//@amountPercents:@amount*100;
+	//-!ie- filter:~"grayscale(@{amountPercents}%)";
+	-webkit-filter: grayscale(@amount);
+	-ie- .iegrayscale(@amount);
+	}
 
 .transition(@property:all,@duration:1s,@method:ease-out){
 transition: @property @duration @method;
