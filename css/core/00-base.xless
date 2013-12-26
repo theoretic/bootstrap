@@ -1,4 +1,4 @@
-/* colors */
+// colors 
 
 @red: #970000;
 
@@ -6,11 +6,11 @@
 @grey-light: #f7f7f7;
 @grey-dark: #323232;
 
-/* paths */
+// paths 
 
 @path: "/assets/templates/bootstrap";
 
-/* mixins */
+// mixins 
 
 .opacity(@opacity:.5){
 @opacityPercents:@opacity*100;
@@ -53,15 +53,15 @@ box-shadow: none;
 }
 
 .iegrayscale(@amount) when(@amount>0) {
-	-ie- filter: gray;
-	}
+-ie- filter: gray;
+}
 
 .grayscale(@amount){
-	//@amountPercents:@amount*100;
-	//-!ie- filter:~"grayscale(@{amountPercents}%)";
-	-webkit-filter: grayscale(@amount);
-	-ie- .iegrayscale(@amount);
-	}
+//@amountPercents:@amount*100;
+//-!ie- filter:~"grayscale(@{amountPercents}%)";
+-webkit-filter: grayscale(@amount);
+-ie- .iegrayscale(@amount);
+}
 
 .transition(@property:all,@duration:1s,@method:ease-out){
 transition: @property @duration @method;

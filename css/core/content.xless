@@ -149,13 +149,11 @@ display:block;
 
 .footer{
 	div, a, p, li{
+		text-align:center;
 		font-size:13px;
 		}
 	h1,h2,h3,h4,h5{
-		padding-top:10px;
-		}
-	ul,li{
-		margin-left:-20px;
-		padding-left:-20px;
+		padding:20px 0 0 0;
+		margin:0px;
 		}
 	}

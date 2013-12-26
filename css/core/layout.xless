@@ -22,10 +22,33 @@ body{
 
 .footer{
 	//border:20px solid #ccc;
+	position:relative;
 	margin:50px 0 0 0;
 	min-height:200px;
 	clear:both;
 	background:
-		rgba(0,0,0,.2) 
+		rgba(0,0,0,.2)
 		//url(@{path}/img/backs/tyre-trace.png) 0 100% no-repeat;
+	}
+
+//misc
+
+.icon128{
+	display:inline-block;
+	width:128px;
+	height:128px;
+	img{
+		width:100px;
+		height:100px;
+		margin:14px;
+		.opacity(.25);
+		//.transition();
+		.transition(all,.1s,ease-out);
+		:hover{
+			width:128px;
+			height:128px;
+			margin:0px;
+			.opacity(1);
+			}
+		}
 	}

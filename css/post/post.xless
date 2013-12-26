@@ -20,14 +20,14 @@
 		}
 	.date{
 		position:absolute;
-		right:20px;
+		right:75px;
 		top:50px;
 		font-size:12px;
 		color:#999;
 		}
 	.back{
 		position:absolute;
-		right:20px;
+		right:75px;
 		top:20px;
 		a
 			{
@@ -41,7 +41,7 @@
 
 	.clip{
 		position:absolute;
-		right:130px;
+		right:30px;
 		top:-20px;
 		z-index:100;
 		width:35px;
@@ -65,9 +65,27 @@
 	.readfull{
 		float:right;
 		}
-	.share{
+	.socials{
+		.opacity(0);
+		.transition();
 		text-align:center;
-		margin: 15px 0;
+		padding:5px 0;
+		clear:both;
+		}
+	:hover{
+		.socials{
+			.opacity(1);
+			}
+		}
+
+	.pluso-wrap{
+		a{
+			.opacity(.5);
+			.transition(all,.25s,ease-out);
+			:hover{
+				.opacity(1);
+				}
+			}
 		}
 	}
 
