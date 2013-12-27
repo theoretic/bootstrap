@@ -3,15 +3,18 @@ body{
 	}
 
 .navbar{
-	height:180px;
+	width:100%;
+	min-height:180px;
 	position:relative;
 	.logo{
-		margin:40px 0 0 0;
+		float:left;
+		margin:40px 0 20px 0;
 		}
 	.menu{
-		position:absolute;
-		left:280px;
-		top:95px;
+		float:left;
+		margin: 95px 0 0 0;
+		//left:280px;
+		//top:95px;
 		}
 	}
 

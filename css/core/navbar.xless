@@ -1,5 +1,19 @@
 //AT
 
+.menu{
+	min-width:570px;
+	//border:1px solid #fff;
+	}
+
+@media (max-width:990px){
+	.navbar{
+		.menu, .menu ul{
+			margin:0px;
+			padding:0px;
+			}
+		}
+	}
+
 @media (max-width:719px){
 	.navbar{
 		background:url(@{path}/img/backs/head720.png) 0 0 no-repeat !important;
