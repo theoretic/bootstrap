@@ -96,3 +96,7 @@ content:" ";
 height:1px;
 clear:both;
 }
+
+div{
+box-sizing:border-box;
+}

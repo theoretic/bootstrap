@@ -2,7 +2,7 @@
 
 
 li.parent>a{
-.opacity(.75)
+.opacity(.6)
 }
 
 // menu
@@ -22,8 +22,10 @@ li.parent>a{
 		text-decoration:none;
 		}
 	a:hover, li.current>a{
-		background:@red;
-		color:#fff;
+		//background:@red;
+		//color:#fff;
+		color:#000;
+		background:url(@{path}/img/backs/paper.jpg) rgba(255,255,255,.75);
 		//.opacity(.35);
 		}
 

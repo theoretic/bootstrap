@@ -1,7 +1,7 @@
 <?
 /*
 AT
-21.11.13
+31.12.13
 
 include syntax:
 
@@ -18,25 +18,10 @@ prefix syntax:
 -ie8>-
 -!ie8>-
 
-
-
 */
 
 class Style
 	{
-	var
-		$config,
-		$Browser,
-		$path,
-		$files,
-		$cacheDir,
-		$cacheFile,
-		$hash,
-		$hashFile,
-		$savedHash,
-		$chunks,
-		$css
-		;
 
 	function __construct($_path)
 		{
@@ -56,13 +41,20 @@ class Style
 		$this->getFiles();
 		$this->makeHash();
 
-		if(!$this->isActual())
+		$isActual=$this->isActual();
+		$cacheExists=is_file($this->cacheFile);
+
+		if( !$isActual || !$cacheExists )
 			{
+			if(!$isActual)
+				{
+				$this->wipeCache();
+				$this->saveHash();
+				}
 			$this->chunkify();
 			$this->parseChunks();
 			$this->minify();
 			$this->saveCache();
-			$this->saveHash();
 			}
 
 		return true;
@@ -163,7 +155,7 @@ class Style
 	private function isActual()
 		{
 		$actual=$this->hash == $this->savedHash;
-		if($actual && !is_file($this->cacheFile)) $actual=false;
+		//if($actual && !is_file($this->cacheFile)) $actual=false;
 		return $actual;
 		}
 
@@ -375,6 +367,19 @@ class Style
 		$file="$dir/$file.css";
 		$this->cacheFile=$file;
 		return $file;
+		}
+
+	private function wipeCache()
+		{
+		$dir=$this->path.'/'.$this->config['cacheDir'];
+
+		foreach(glob("$dir/*.css") as $file)
+			{
+			if(!is_file($file)) continue;
+			unlink($file);
+			}
+
+		return true;
 		}
 
 	private function saveCache()
